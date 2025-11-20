@@ -36,7 +36,7 @@ https://community.microcenter.com/kb/articles/640-inland-rotary-encoder-module
 ```
 python3 -m venv ./clockenv --system-site-packages
 source clockenv/bin/activate
-pip install adafruit-circuitpython-ht16k33 adafruit-python-shell rpi.gpio
+pip install adafruit-circuitpython-ht16k33 adafruit-python-shell rpi.lgpio
 ```
 
 
