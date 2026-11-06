@@ -1,0 +1,14 @@
+[Unit]
+Description=MakerClock
+Wants=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi
+ExecStart=/home/pi/clock/bin/python /home/pi/clocktest.py --serve-in-foreground
+Restart=on-failure
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
