@@ -27,6 +27,13 @@ https://community.microcenter.com/kb/articles/640-inland-rotary-encoder-module
 
 # Installation
 
+## Services
+
+1. cp systemd/* /etc/systemd/system/
+1. sudo systemctl daemon-reload
+1. sudo systemctl enable makerclock.service
+1. sudo systemctl start makerclock.service
+
 ## Software Dependencies
 
 
@@ -34,8 +41,8 @@ https://community.microcenter.com/kb/articles/640-inland-rotary-encoder-module
 ## Running Notes
 
 ```
-python3 -m venv ./clockenv --system-site-packages
-source clockenv/bin/activate
+python3 -m venv ./clock --system-site-packages
+source clock/bin/activate
 pip install adafruit-circuitpython-ht16k33 adafruit-python-shell rpi.lgpio
 ```
 
