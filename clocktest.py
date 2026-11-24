@@ -11,8 +11,8 @@ display.fill(False)
 
 while True:
     now = datetime.datetime.now()
-    hour = now.hour % 12
+    hour = now.hour if now.hour <= 12 else now.hour % 12
     minute = now.minute
-    display.print(f"{now.hour: 2}:{now.minute:02}")
+    display.print(f"{hour: 2}:{minute:02}")
     display.top_left_dot = now.hour >= 12
     time.sleep(15)
