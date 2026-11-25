@@ -14,7 +14,11 @@ https://learn.adafruit.com/digital-clock-with-circuitpython/
 
 ## Audio Setup
 
+### Adafruit Stereo Speaker Bonnet
 https://learn.adafruit.com/adafruit-speaker-bonnet-for-raspberry-pi/raspberry-pi-usage
+
+### Adafruit MAX98357 I2S + Amplifier Breakout Board
+https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/raspberry-pi-wiring
 
 ## Display Setup
 
